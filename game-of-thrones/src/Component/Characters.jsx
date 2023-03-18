@@ -1,9 +1,26 @@
 import React from 'react'
+import { Box, Grid } from '@mui/material'
+import { data } from '../constants/data'
+import Character from './Character'
+
+
+
+
 
 const Characters = () => {
   return (
-    <div>Hello Characters</div>
+   <Box style={{margin: '10px 35px'}}>
+      <Grid container>
+        {
+            data.characters.map(value => (
+                <Grid item>
+                    <Character value={value}/>
+                </Grid>    
+            ))
+        }
+      </Grid>
+   </Box>
   )
 }
 
-export default Characters
+export default Characters;
