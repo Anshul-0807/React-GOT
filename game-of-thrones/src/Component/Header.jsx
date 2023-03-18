@@ -8,9 +8,9 @@ background: #000;
 
 const Header = () => {
   return (
-   <StyledHeader>
+   <StyledHeader position='static'>
     <Toolbar>
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" style={{width:250}} />
     </Toolbar>
    </StyledHeader>
   )
